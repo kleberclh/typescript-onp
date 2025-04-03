@@ -1,5 +1,16 @@
-function somar(a: number, b: number) {
-  console.log(a + b);
+type Id = number | string;
+type Nome = string;
+
+function pessoa(id: Id, nome: Nome, idade: number): object {
+  return {
+    id,
+    nome,
+    idade,
+  };
 }
 
-somar(1, 3);
+type Humano = "Mulher" | "Homem";
+
+let user: Humano;
+
+user = "Mulher";
